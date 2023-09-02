@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>services</title>
+<meta name="Jaisingh S" content="It is  website for students to get nss membership">
+<style>
+body{
+margin:0;
+padding:0;
+box-sizing:border-box;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+font-family:cursive;
+background:linear-gradient(to right,cyan,hotpink);
+
+}
+.container{
+display:flex;
+justify-content:space-between;
+}
+.container .box{
+position:relative;
+width:350px;
+padding:30px;
+background-color:whitesmoke;
+margin:15px;
+border-radius:20px;
+overflow:hidden;
+box-sizing:border-box;
+text-align:center;
+}
+.container .box .icon{
+
+position:relative;
+display:flex;
+justify-content:center;
+align-items:center;
+color:WHITE;
+width:70PX;
+height:70px;
+margin:0 auto;
+border-radius:50%;
+background-color:red;
+font-size:1.4rem;
+font-weight:700;
+transition:0.7s;
+}
+.container .box:nth-child(1) .icon{
+background:blue;
+box-shadow:0 0 10px grey;
+}
+.container .box:nth-child(1):hover .icon{
+background:blue;
+box-shadow:0 0 0 400px blue;
+
+}
+.container .box:nth-child(2) .icon{
+background:green;
+box-shadow:0 0 10px grey;
+}
+.container .box:nth-child(2):hover .icon{
+
+box-shadow:0 0 0 400px green;
+}
+.container .box:nth-child(3) .icon{
+background:gold;
+box-shadow:0 0 10px grey;
+}
+.container .box:nth-child(3):hover .icon{
+
+box-shadow:0 0 0 400px gold;
+}
+.container .box .content{
+position:relative;
+z-index:1;
+transition:0.6s;
+
+}
+.container .box .content h3{
+font-size:1.4REM;
+MARGIN:10PX 0;
+padding:0;
+}
+.container .box .content p{
+MARGIN:0;
+padding:0;
+}
+a{
+display:inline-block;
+margin-top:15px;
+padding:10px 20px;
+background:white;
+border-radius:5px;
+text-decoration:none;
+font-weight:500;
+font-size:1rem;
+box-shadow:0 2px 5px grey;
+}
+.container .box:before{
+content:'';
+width:50%;
+height:100%;
+position:absolute;
+top:0;
+left:0;
+background:rgba(255,255,255,.2);
+z-index:2;
+
+}
+</style>
+<body>
+<div class="container">
+	<div class="box">
+		<div class="icon">01</div>
+		<div class="content">
+			<h3>Current position</h3>
+			<p>Latitude and longitude are crucial coordinates used to pinpoint a specfic location on earth's surface.They provide a standardized way to track and navigate because they are unique to each point on the planet.Latitude lines are run east-west and measure distance north or south of the equator.</p>
+			<a href="about.html">Load more</a>
+		</div>
+	</div>
+	<div class="box">
+		<div class="icon">02</div>
+		<div class="content">
+			<h3>Watch position</h3>
+			<p>The ability to track watch position using a location tracker has several important benefits,safety and security,monitoring,geofencing,remote controla are these important things in position method to handle the gtrack platform.This type of services is meticulous tracking and good technology using googlemaps.</p>
+			<a href="about.html">Load more</a>
+		</div>
+	</div>
+	<div class="box">
+		<div class="icon">03</div>
+		<div class="content">
+			<h3>Number tracker</h3>
+			<p>mobile tracker services can serve various important purposes, lost or stolen recovery,emergency assitance,child safety,
+			  family maonitoring,travel safety,location based services,customer engagement and offer numerous advantages ,they aslo come with ethical and privacy considerations.</p>
+			<a href="about.html">Load more</a>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>

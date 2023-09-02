@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>location</title>
+<meta name="Jaisingh S" content="It is  website for students to get nss membership">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<style>
+html{
+
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family:ARIAL;
+}
+body{
+background-image:url("geo5.jpg");
+height:100%;
+width:100%;
+background-repeat:no-repeat;
+background-size:cover;
+}
+
+.container{
+background-color:navy;
+display:flex;
+position:fixed;
+justify-content:space-between;
+align-items:center;
+z-index:10;
+padding:10px;
+heigth:100%;
+width:100%;
+box-shadow:0 0 10px white,0 0 20px gold;
+
+}
+.container ul{
+display:flex;
+justify-content:center;
+align-items:center;
+padding:10px;
+}
+.container ul li{
+list-style-type:none;
+padding: 0px 40px;
+margin-right:70px;
+}
+.container ul li a{
+text-decoration:none;
+font-size:1.3rem;
+color:white;
+font-weight:600;
+
+}
+.container h1{
+font-size:2.5rem;
+color:white;
+text-shadow:0 0 10px gold,0 0 10px gold,0 0 10px black,0 0 10px gold;
+
+}
+.container h1:hover{
+opacity:0.9;
+}
+.container ul li a:hover{
+color:black;
+border:none;
+background-color:skyblue;
+padding:5px;
+border-radius:8px;
+
+}
+main{
+position:relative;
+top:80px;
+height:1000px;
+
+}
+main h1{
+font-family:Serif;
+color:red;
+text-shadow:0 0 5px black;
+}
+main h4{
+margin-top:8px;
+text-indent:45px;
+font-size:1.4rem;
+color:whitesmoke;
+text-shadow:0 0 10px black;
+}
+.ul{
+padding:10px;
+
+}
+.ul li {
+list-style-type:none;
+}
+.ul li a{
+text-decoration:none;
+font-size:1.4rem;
+color:navy;
+font-weight:600;
+}
+.ul li a:hover{
+color:skyblue;
+text-decoration:underline;
+padding:4px;
+text-shadow:0 0 10px black,0 0 10px black;
+}
+.section{
+
+border:3px solid black;
+padding:10px;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+margin:50px 0px 0px 0px;
+border-radius:10px;
+bottom:0;
+box-shadow:0 0 10px gold,0 0 20px black,0 0 20px white;
+
+}
+.section h3{
+font-size:1.8rem;
+color:whitesmoke;
+text-shadow:0 0 10px black,0 0 10px red;
+padding:5px;
+}
+.section h3:hover{
+opacity:0.9;
+font-size:1.9rem;
+text-shadow:0 0 6px black;
+}
+.section span{
+
+margin-bottom:5px;
+font-size:1.3rem;
+letter-spacing:1px;
+word-spacing:3px;
+color:black;
+font-weight:600;
+
+}
+.section span a{
+color:red;
+text-decoration:none;
+text-shadow:none;
+}
+.section span a:hover{
+color:navy;
+text-decoration:UNDERLINE;
+padding:3PX;
+}
+.section span p{
+text-shadow:0 0 3px white;
+}
+.last{
+color:white;
+text-shadow:0 0 20px black;
+
+}
+.sign_explain{
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+margin:50px;
+color:white;
+padding:5px;
+transition:0.4s;
+border-radius:10px;
+border:3px solid black;
+box-shadow:0 0 10px white,0 0 10px white,0 0 10px white;
+
+
+
+}
+.h3{
+margin-top:5PX;
+font-size:1.3rem;
+padding:10px;
+}
+.signin_a{
+color:red;
+text-decoration:none;
+}
+.sign_explain:hover{
+background:linear-gradient(deepPINK,CYAN);
+box-shadow:0 0 100px navy;
+
+}
+.signin_a:hover,
+.signin_a:focus{
+color:yellow;
+font-weight:bold;
+}
+.jai{
+color:deeppink;
+text-decoration:underline;
+font-size:1.2rem;
+
+}
+.sign_p{
+font-size:1.4rem;
+
+}
+.signup{
+margin-top:200px;
+justify-content:justify;
+}
+#latitude h5{
+font-size:1.5rem;
+}
+#latitude button{
+padding:10px;
+border-radius:10px;
+font-size:1.2rem;
+margin-top:20px;
+}
+#latitude button:hover{
+color:white;
+background-color:orange;
+box-shadow:0 0 20px black;
+}
+#latitude button i{
+margin-bottom:0px;
+color:blue;
+text-shadow:0 0 20px white;
+}
+#latitude p{
+font-size:1.3rem;
+color:gold;
+border:2px solid black;
+width:40%;
+height:50PX;
+padding:5px;
+font-family:cursive;
+margin:8px;
+border-radius:10px;
+}
+#latitude p:hover{
+box-shadow:0 0 10px black;
+
+}
+#find:hover{
+box-shadow:0 0 50px white;
+background-color:red;
+}
+#maplinker h6{
+margin-top:10px;
+font-size:1.3rem;
+color:black;
+}
+#maplinker #find{
+padding:8px;
+font-size:1.2rem;
+color:black;
+border-radius:8px;
+background:orange;
+box-shadow:0 0 10px blue;
+margin:8px;
+}
+#latitude{
+BORDER:3PX SOLID black;
+box-shadow:0 0 60px white;
+background-color:transparent;
+display:flex;
+flex-direction:column;
+align-items:left;
+justify-content:center;
+padding:20px;
+margin-bottom:30PX;
+margin-top:15px;
+margin-left:40px;
+margin-right:40px;
+border-radius:10px;
+}
+#latitude button{
+width:20vw;
+padding:10px;
+
+}
+#maplinker #button:hover{
+background-color:red;
+}
+#latitude:hover{
+background:linear-gradient(to top,deeppink,cyan);
+}
+#maplinker {
+BORDER:3PX SOLID black;
+box-shadow:0 0 60px white;
+background-color:transparent;
+display:flex;
+flex-direction:column;
+align-items:left;
+justify-content:center;
+padding:10px;
+margin-bottom:0PX;
+margin-top:10px;
+margin-left:40px;
+margin-right:40px;
+border-radius:10px;
+}
+#maplinker:hover{
+background:linear-gradient(PINK,CYAN);
+}
+.mapouter
+{
+margin-top:0px;
+position:relative;
+display:flex;
+flex-direction:row;
+text-align:right;
+width:1500px;
+height:400px;
+gap:10px;
+margin-bottom:0PX;
+}
+.gmap_canvas {
+overflow:hidden;background:none!important;width:500px;height:400px;
+border-radius:20px;
+}
+.gmap_iframe {
+width:500px!important;height:400px!important;
+}
+main .h1:hover{
+text-shadow:0 0 500px white;
+z-index:-2;
+}
+.h1:hover{
+text-shadow:0 0 20px black;
+}
+</style>
+<body>
+<script>
+/*
+var x = document.getElementById("para");
+function Location(){
+ if(navigator.geolocation){
+	navigator.geolocation.getCurrentPosition(showPosition);
+	
+ }
+ else{
+	x.innerHTML="location tracker is not supported by your browser";
+ }
+}
+function showPosition(position){
+
+x.innerHTML="latitude:"+position.coords.latitude+"<br>longitude:"+position.coords.longitude;
+
+
+}
+
+*/
+alert("Are you successfully register gtrack?");
+function Location(){
+const para1 = document.querySelector("#para");
+para1.textContent=""
+
+function success(position){
+const latitude = position.coords.latitude;
+const longitude = position.coords.longitude;
+para.textContent="";
+para.textContent=`latitude:${latitude} longitude:${longitude}`;
+}
+function error(){
+para.textContent="Unable to connect your location";
+}
+if (!navigator.geolocation){
+para.textContent = "geolocation is not supported";
+}
+else{
+para.textContent = "locating the current position...";
+navigator.geolocation.getCurrentPosition(success,error);
+}
+}
+document.querySelector("#para").addEventListener("click",Location);
+</script>
+<script>
+
+function findMe(){
+const status = document.querySelector("#status");
+const mapLink = document.querySelector("#map-link");
+
+mapLink.href="";
+mapLink.textContent="";
+
+function success(position){
+const latitude = position.coords.latitude;
+const longitude = position.coords.longitude;
+
+status.textContent ="";
+mapLink.href = "https://www.google.com/maps/#map=18/${latitude}/${longitude}";
+mapLink.textContent = `latitude:${latitude}longitude:${longitude}`;
+}
+function error(){
+status.textContent="unable to connect your location";
+
+}
+if (!navigator.geolocation){
+status.textContent = "geolocation is not supported";
+}
+else{
+status.textContent = "locating the watch position...";
+navigator.geolocation.getCurrentPosition(success,error);
+}
+}
+document.querySelector("#find").addEventListener("click",findMe);
+
+
+</script>
+
+<div class="container">
+<h1>Gtrack</h1>
+<ul class="nav">
+<li><a href="signin.html">Home</a></LI>
+
+<li><a href="location.html">Location</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="about.html">About</a></li>
+
+</ul>
+</div>
+<main>
+<h1 class="h1">LOCATION</H1>
+<H4>The Technology has advanced to the stage where it is now possible to track the user location from across the world.Its quite simple to get a person's personal information regardless of the device,they use by using location tracker for free.however tracking smartphones is only possible when they are in online.	</h4>
+<UL class="ul">
+ <li> <a href="#latitude">1.Latitude and longitude.</a></li>
+ <li><a href="#maplinker"> 2.Map Linker</a></li>
+  <li><a href="#"> 3.Number tracker</a></li>
+</UL>
+
+<div class="sign_explain">
+<h3 class="h3"> Hey users!<i class="jai" title="developer"style="color:yellow;"> Jaisingh S </i> is here ,I like to introduce my grant new website <q style="font-size:1.4rem; Color:black;"> Gtrack</q>
+this plays  an important role in today's life which is used to track your location... this geo location  tracker will give the various facilities on latitude,longitude and maping location to web pages </h3>
+<p class="sign_p">Let's <a href="signin.html" class="signin_a">Register </a> before to get into website</p>
+</div>
+<div id="latitude">
+	<h5> Locating the user's position:</h5>
+	<button "class="button" style="cursor:pointer;" onclick="Location()"> <i class="material-icons">room</i>Click this button</button>
+	<p id="para"></p>
+</div>
+
+<div id="maplinker">
+	<h6 style="font-size:1.4rem;  font-weight:bold;">Locating the watch position with maps:</H6>
+	<h6 STYLE="color:red; text-shadow:0 0 2px black;"> Connecting with google maps<h6>
+	<button id="find" style="cursor:pointer;"onclick="findMe()">show my location</button><br>
+	<p id="status"></p>
+	<a id="map-link" target="_blank" style="color:navy; "></a>
+<div></main>
+<!--<div class="moblie">
+<label>mobile number:</label>
+<input type="tel" id="num" >
+<button type="button" onclick="mobileLocation()" id="button"> NumberTracker</BUTTON>
+<p id="para2"></p>
+<a id="link" target="_blank"></a>
+</div>-->
+<div class="mapouter">
+<div class="gmap_canvas">
+<iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=india&amp;t=&amp;z=4&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://gachanox.io/">Gacha Nox Download</a></div>
+<div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=500&amp;height=400&amp;hl=en&amp;q=tamilnadu&amp;t=&amp;z=8&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://gachanox.io/">Gacha Nox Download</a></div>
+<div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=500&amp;height=400&amp;hl=en&amp;q=redhills&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://gachanox.io/">Gacha Nox Download</a></div>
+<div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=500&amp;height=400&amp;hl=en&amp;q=assam&amp;t=&amp;z=7&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://gachanox.io/">Gacha Nox Download</a></div></div>
+<br>
+<FOOTER style="width:100%">
+<section class="section">
+<h3 >Gtrack </h3>
+<span><p>Email-id:<a href="mailto:sjaisingh456@gmail.com">sjaisingh456@gmail</a></p></span>
+<span> <p>Linkedin-id:<a href="https://www.linkedin.com/mwlite/in/jaisingh-s-948103231">Linkedin</a></p></span>
+<span><p>Github-id:<a href="https://github.com/JaisinghS">Github</a></p></span>
+<SPAN><pre class="last">Copyright &copy;  2023 ,powdered by Jaisingh S through Seval Software Solutions,Tamilnadu,Chennai.</pre></span>
+ 
+</section>
+
+
+
+</FOOTER>	
+
+
+
+</body>
+
+
+
+
+</html>

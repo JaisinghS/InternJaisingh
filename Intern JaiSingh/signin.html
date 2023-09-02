@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>signin</title>
+<meta name="Jaisingh S" content="It is  website for students to get nss membership">
+<style>
+body{
+background-image:url("backpic10.jpg");
+background:linear-gradient(violet,navy);
+background-attachment:fixed;
+margin:0;
+padding:0;
+height:650px;
+box-sizing:border-box;
+font-family:Arial;
+
+}
+.container1{
+background-color:navy;
+display:flex;
+position:fixed;
+justify-content:space-between;
+align-items:center;
+top:0;
+height:70px;
+width:100%;
+box-shadow:0 0 10px white,0 0 20px gold;
+
+}
+.container1 ul{
+display:flex;
+justify-content:center;
+align-items:center;
+
+}
+.container1 ul li{
+list-style-type:none;
+padding: 0px 40px;
+margin-right:70px;
+}
+.container1 ul li a{
+text-decoration:none;
+font-size:1.3rem;
+color:white;
+font-weight:600;
+
+}
+.container1 h1{
+font-size:2.5rem;
+color:white;
+text-shadow:0 0 10px gold,0 0 10px gold,0 0 10px black,0 0 10px gold;
+
+}
+.container1 h1:hover{
+opacity:0.9;
+}
+.container1 ul li a:hover{
+color:black;
+border:none;
+background-color:skyblue;
+padding:5px;
+border-radius:8px;
+
+}
+#form{
+margin:20vh auto 0 auto;
+width:350px;
+border-radius:10px;
+background-color:whitesmoke;
+padding:25px;
+box-shadow:0 0 10px black,0 0 20px black;
+}
+.h1{
+margin-top:0;
+text-align:center;
+color:#792099;
+
+}
+#form button{
+padding:8px;
+color:white;
+background-color:violet;
+border-radius:5px;
+border:2px solid #792099;
+margin:20px 0px 5px 0px;
+font-size:1.2rem;
+width:100%;
+cursor:pointer;
+}
+#form button:hover{
+background-color:blue;
+color:black;
+font-size:1.3rem;
+}
+.group{
+display:flex;
+flex-direction:column;
+margin-bottom:10px;
+}
+.group input{
+border:1px solid blue;
+border-radius:5px;
+font-size:1.2rem;
+margin-top:5PX;
+padding:8PX;
+
+}
+.group input:focus{
+outline:green;
+}
+.group .error{
+color:red;
+font-size:1rem;
+margin-top:4px;
+}
+.group label{
+font-weight:medium;
+font-family:cursive;
+font-size:1.2rem;
+color:green;
+
+}
+.group .success input{
+border-color:green;
+
+}
+.group .error input{
+border-color:red;
+
+}
+
+</style>
+<body>
+<script>
+alert("Gtrack welcomes you: let's go");
+function Submit(){
+
+const form =document.querySelector("#form");
+const email =document.querySelector("#email");
+const username =document.querySelector("#username");
+const password =document.querySelector("#password");
+const cpassword =document.querySelector("#cpassword");
+
+if (username.value.trim() =="" ){
+	alert("No empty values allowed please full all your details!");
+	username.style.border= "2px solid red";
+	return false;
+}
+if(email.value.trim() ==""){
+alert("No empty values allowed please full all your details!");
+	email.style.border= "2px solid red";
+	return false;
+}
+
+if(password.value.trim() ==""){
+alert("No empty values allowed please full all your details!");
+	password.style.border= "2px solid red";
+	return false;
+}
+if(cpassword.value.trim() ==""){
+alert("No empty values allowed please full all your details!");
+	cpassword.style.border= "2px solid red";
+	return false;
+}
+if(password.value.length<4 ){
+	alert("password is not less than 4 character!");
+	return false;
+}
+if(cpassword.value.trim() != password.value.trim()){
+	alert("password not matched");
+	return false;
+}
+
+else{
+	return true;
+}
+}
+
+</script>
+
+<div class="container1">
+<h1>Gtrack</h1>
+<ul class="nav">
+<li><a href="signin.html">Home</a></LI>.
+
+<li><a href="location.html">Location</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="about.html">About</a></li>
+
+</ul>
+</div>
+
+<div class="container">
+<form  onsubmit="return Submit()" action="location.html" id="form">
+	<h1 class="h1">Register</h1>
+	<div class="group">
+		<label for="username">Username</label>
+		<INPUT type="TEXT" id="username"name="username" >
+		
+	</div>
+	<div class="group">
+		<label for="email">Email -id</label>
+		<INPUT type="email" id="email"name="email" >
+		
+	</div>
+	<div class="group">
+		<label for="password">Password</label>
+		<INPUT type="password" id="password"name="password"value="" >
+		
+	</div>
+	
+	<div class="group">
+		<label for="cpassword">Confirm Password</label>
+		<INPUT type="password" id="cpassword"name="cpassword" >
+
+	</div>
+	<button type="submit">Register</button>
+</form>
+</div>
+</body>
+</html>
